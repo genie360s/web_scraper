@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="w-50 container-fluid shadow-lg p-3 rounded-3">
+  
+  <h3 class="fw-bold p-2 text-center">{% block title %}Sign Up{% endblock %}</h3>
+  
+  <form action="" method="POST">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="username" name="username" placeholder="name@example.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary w-100" value="Register">Sign Up</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
